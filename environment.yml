@@ -19,3 +19,4 @@ dependencies:
   - fsspec=0.7.2
   - geoviews=1.8.1
   - pandas=1.0.3
+  - dask-gateway=0.7
