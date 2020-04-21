@@ -21,4 +21,5 @@ dependencies:
   - pandas=1.0.3
   - dask-gateway=0.7
   - dask-labextension
-  - gcsfs
+  - gcsfs=0.6
+  - zarr=2.4
