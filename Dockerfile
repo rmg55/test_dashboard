@@ -36,7 +36,7 @@ RUN conda config --set channel_priority strict && \
     	fix-permissions $CONDA_DIR
 
 RUN conda init bash && exec bash
-RUN git clone --branch gae https://github.com/rmg55/test_dashboard.git /rrsru_app
+RUN git clone --branch gae https://github.com/rmg55/test_dashboard.git $HOME/rrsru_app
 
 
 EXPOSE 8080
@@ -44,4 +44,4 @@ EXPOSE 8080
 CMD panel serve \
     --allow-websocket-origin="*" \
     --port=8080 \
-    /rrsru_app/test_dashboard/test_dashboard.ipynb
+    $HOME/rrsru_app/test_dashboard.ipynb
